@@ -11,4 +11,9 @@ class XmlReaderFormController extends Controller {
         View::render('xml-reader-form');
     }
 
+    public function generateQuery()
+    {
+        echo 'generating query';
+    }
+
 }
