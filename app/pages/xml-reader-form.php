@@ -25,6 +25,7 @@
                 <input
                     type="file"
                     id="xml-input"
+                    accept=".xml"
                 >
             </div>
             <button
