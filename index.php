@@ -1,10 +1,10 @@
 <?php
 
-require_once('./vendor/autoload.php');
-require_once('./app/Domain/Router.php');
-require_once('./app/Domain/web.php');
+require_once(__DIR__ . '/vendor/autoload.php');
 
 use Alyssoncpc\QueryGenerator\Domain\Router;
+
+require_once(__DIR__ . '/app/Domain/web.php');
 
 try {
     Router::checkUri();

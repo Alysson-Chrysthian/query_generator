@@ -1,5 +1,8 @@
 <?php
 
+require_once(__DIR__ . '/../Controllers/XmlReaderController.php');
+
+use Alyssoncpc\QueryGenerator\Controllers\XmlReaderFormController;
 use Alyssoncpc\QueryGenerator\Domain\Router;
 
-Router::get('/ola', function () {echo 'ola';});
+Router::get('/', [new XmlReaderFormController, 'render']);
